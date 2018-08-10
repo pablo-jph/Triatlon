@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="165dp"
+            android:id="@+id/cuponSuperior">
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:id="@+id/ivCategoria"
+                android:layout_width="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="false"
+                android:scaleType="centerCrop"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+
+            <Button
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/btnPreferencia"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_star"
+                android:onClick="registrar_preferencia"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/rlCanjeado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvCategoria"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Restaurant"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
